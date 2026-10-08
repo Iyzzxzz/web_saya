@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Kelompok 1</title>
+</head>
+<body>
+
+    <!-- Judul halaman -->
+    <header>
+        <h1>Biodata Anggota Kelompok 1</h1>
+        <p>Mata Kuliah: Pemrograman Web - Desain UI/UX</p>
+    </header>
+
+    <hr>
+
+    <!-- Isi biodata -->
+    <section>
+        <h2>Anggota Kelompok</h2>
+
+        <!-- 1. Ketua -->
+        <h3>1. Abdullah Azzam (Ketua)</h3>
+        <img src="1000131126.jpg" alt="Foto Abdullah Azzam" width="150">
+        <p><strong>NIM:</strong> 0110226038</p>
+        <p><strong>Kelas:</strong> TI 02</p>
+        <p><strong>Hobi:</strong> Futsal</p>
+        <p><strong>Minat:</strong> Cyber security, pemrograman</p>
+
+        <hr>
+
+        <!-- 2. Wakil ketua -->
+        <h3>2. Afdiah Hasanah Lubis (Wakil Ketua)</h3>
+        <img src="1000135077.jpg" alt="Foto Afdiah Hasanah Lubis" width="150">
+        <p><strong>NIM:</strong> 0110226081</p>
+        <p><strong>Kelas:</strong> TI 02</p>
+        <p><strong>Hobi:</strong> Billiard, badminton, make up</p>
+        <p><strong>Minat:</strong> Cyber security</p>
+
+        <hr>
+
+        <!-- 3. Anggota -->
+        <h3>3. Adli Fadlurahman (Anggota)</h3>
+        <img src="1000132424.jpg" alt="Foto Adli Fadlurahman" width="150">
+        <p><strong>NIM:</strong> 0110226053</p>
+        <p><strong>Kelas:</strong> TI 02</p>
+        <p><strong>Hobi:</strong> Futsal</p>
+        <p><strong>Minat:</strong> Cyber security, pemrograman</p>
+
+        <hr>
+
+        <!-- 4. Anggota -->
+        <h3>4. Abdullah Qowiy (Anggota)</h3>
+        <img src="1000123680.png" alt="Foto Abdullah Qowiy" width="150">
+        <p><strong>NIM:</strong> 0110226123</p>
+        <p><strong>Kelas:</strong> TI 02</p>
+        <p><strong>Hobi:</strong> Jogging</p>
+        <p><strong>Minat:</strong> Artificial intelligence (AI)</p>
+    </section>
+
+    <hr>
+
+    <!-- Catatan kelompok -->
+    <aside>
+        <h3>Catatan Kelompok</h3>
+        <p>Kami berkelompok untuk belajar membuat tampilan web yang menarik, mudah dipakai, dan rapi. Desain UI/UX membantu pengguna merasa nyaman saat mengunjungi halaman web.</p>
+        <p><em>Semangat belajarnya ya! 💪</em></p>
+    </aside>
+
+    <hr>
+
+    <!-- Bagian bawah -->
+    <footer>
+        <p>&copy; 2026 Kelompok 1 - Desain UI/UX</p>
+        <p>Praktikum Mandiri Pemrograman Web</p>
+    </footer>
+
+</body>
+</html>
