@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <table border="1" width="100%">
+        <tr align="center">
+            <td><a href="#">Home</a></td>
+            <td><a href="#">Generate Link</a></td>
+            <td><a href="#">Transaction History</a></td>
+            <td><a href="#">Policy</a></td>
+            <td><a href="#">Logout</a></td>
+        </tr>
+    </table>
+
+    <h1>Form Pemesanan Barang</h1>
+    <p>silahkan isi form pemesanan ini dengan lengkap dan benar</p>
+
+    <form action="hasil-pemesanan.html" method="post">
+
+        <fieldset>
+            <legend>Informasi Barang</legend>
+
+            <p>
+                <img src="gambar tv.png" alt="LG QNED evo AI Mini LED 2026" width="250"><br>
+                <label for="picture">Upload Picture:</label>
+                <input type="file" id="picture" name="picture">
+            </p>
+            <p>
+                <label for="title">Title Here:</label>
+                <input type="text" id="title" name="title" size="40" value="LG QNED evo AI Mini LED 2026" required>
+            </p>
+            <p>
+                <label for="description">Description:</label><br>
+                <textarea
+                id="description"
+                name="description"
+                rows="5"
+                cols="50"
+                maxlength="400">Tahun : 2026
+Model : QNED evo AI Mini LED
+Kondisi : Baru
+Harga : Rp. 11.699.000</textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informasi Pembayaran</legend>
+
+            <p>
+                <label for="accountnumber">Account Number:</label>
+                <input type="text" id="accountnumber" name="accountnumber" placeholder="123-456-789-0" required>
+            </p>
+            <p>
+                <label for="bank">Bank:</label>
+                <select id="bank" name="bank">
+                    <option value="bca">BCA</option>
+                    <option value="mandiri">Mandiri</option>
+                    <option value="bni">BNI</option>
+                    <option value="bri">BRI</option>
+                </select>
+            </p>
+            <p>
+                <label for="accountholder">Account Holder:</label>
+                <input type="text" id="accountholder" name="accountholder" placeholder="Name Here" required>
+            </p>
+            <p>
+                <label for="transaction">Transaction:</label>
+                <select id="transaction" name="transaction">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                * if the transaction is for 3 person, choose 3 from the drop-down list
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kirim Notifikasi</legend>
+
+            <p>
+                <input type="checkbox" id="sendphone" name="sendphone" value="phone" checked>
+                <label for="sendphone">Send to Mobile Phone</label><br>
+            </p>
+            <p>
+                <input type="checkbox" id="sendemail" name="sendemail" value="email" checked>
+                <label for="sendemail">Send to Email</label><br>
+            </p>
+            <p>
+                <label for="phone">Send to Mobile Phone:</label>
+                <input type="text" id="phone" name="phone" size="40" placeholder="1234567890, 1234567891">
+            </p>
+            <p>
+                <label for="email">Send to Email:</label>
+                <input type="text" id="email" name="email" size="40" placeholder="nama@email.com">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Generate Nabr Link">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+</body>
+</html>

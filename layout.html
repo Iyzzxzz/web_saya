@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaktus Corner - Toko Tanaman Hias Mini</title>
+    <style>
+        /* ===== Reset dasar ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            background-color: #fff8e7;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* ===== Kalau dibuka di dalam iframe (index), sembunyikan header, nav, footer ===== */
+        .di-iframe header,
+        .di-iframe nav,
+        .di-iframe footer {
+            display: none;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 6px dashed #ffb703;
+        }
+
+        .logo {
+            font-size: 60px;
+            background-color: white;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-text h1 {
+            font-size: 32px;
+            letter-spacing: 3px;
+        }
+
+        .header-text p {
+            font-style: italic;
+            color: #d8f3dc;
+        }
+
+        /* ===== Navigasi ===== */
+        nav {
+            background-color: #ffb703;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 28px;
+            text-decoration: none;
+            color: #1b4332;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff7b9c;
+            color: white;
+        }
+
+        /* ===== Layout utama: article kiri, aside kanan ===== */
+        .main-container {
+            display: flex;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            flex: 2;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #ffe5ec;
+            border: 3px solid #ff7b9c;
+            border-radius: 15px;
+            padding: 20px;
+            height: fit-content;
+        }
+
+        /* ===== Section di dalam article ===== */
+        section {
+            background-color: white;
+            border: 3px solid #2d6a4f;
+            border-left: 12px solid #2d6a4f;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #2d6a4f;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            text-align: justify;
+        }
+
+        /* ===== Aside dan kartu tanaman ===== */
+        aside h3 {
+            text-align: center;
+            color: #9d0208;
+            margin-bottom: 15px;
+        }
+
+        .plant-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 2px solid #ff7b9c;
+        }
+
+        .plant-card:hover {
+            transform: rotate(-2deg) scale(1.03);
+        }
+
+        .plant-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .plant-info {
+            padding: 10px;
+        }
+
+        .plant-info h4 {
+            color: #2d6a4f;
+        }
+
+        .plant-info p {
+            font-size: 14px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 6px dashed #ffb703;
+        }
+
+        /* ===== Responsif sederhana ===== */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header: Logo dan Nama Web -->
+    <header>
+        <div class="logo">🌵</div>
+        <div class="header-text">
+            <h1>KAKTUS CORNER</h1>
+            <p>Tanaman Kecil, Meja Kerja Jadi Lebih Hijau!</p>
+        </div>
+    </header>
+
+    <!-- Nav: Berisi Menu Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Koleksi</a></li>
+            <li><a href="#">Cara Pesan</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pembungkus Layout Utama (Article & Aside) -->
+    <div class="main-container">
+
+        <!-- Article: Berisi Konten Utama dengan 3 Section -->
+        <article>
+            <section>
+                <h2>🌱 Tentang Kaktus Corner</h2>
+                <p>Kaktus Corner adalah toko tanaman hias mini yang berawal dari hobi menanam di teras kosan. Kami menjual kaktus, sukulen, dan tanaman kecil yang gampang dirawat, cocok buat kamu yang sibuk kuliah, sering lupa menyiram, atau baru pertama kali punya tanaman.</p>
+            </section>
+
+            <section>
+                <h2>🪴 Tips Merawat Kaktus</h2>
+                <p>Kaktus tidak butuh banyak air. Cukup siram seminggu sekali, letakkan di tempat yang terkena cahaya matahari, dan gunakan tanah yang tidak lembap terus-menerus. Kalau daunnya mulai lembek, itu tandanya kamu terlalu sayang sampai kebanyakan menyiram.</p>
+            </section>
+
+            <section>
+                <h2>📦 Cara Pemesanan</h2>
+                <p>Pesan itu gampang! Pilih tanaman di halaman koleksi, kirim nama dan alamat lewat WhatsApp, transfer pembayaran, lalu tunggu paketmu datang. Setiap tanaman kami bungkus dengan kardus dan koran bekas supaya aman sampai tujuan.</p>
+            </section>
+        </article>
+
+        <!-- Aside: Berisi Konten Multimedia Foto Tanaman Best Seller -->
+       <aside>
+    <h3>⭐ Best Seller</h3>
+
+    <div class="plant-card">
+        <svg viewBox="0 0 400 300" style="display:block;width:100%" role="img" aria-label="Ilustrasi kaktus bulat mini">
+            <rect width="400" height="300" fill="#b7e4c7"/>
+            <path d="M140 215 H260 L248 280 H152 Z" fill="#c8553d"/>
+            <rect x="130" y="198" width="140" height="22" rx="6" fill="#e07a5f"/>
+            <ellipse cx="200" cy="140" rx="62" ry="65" fill="#2d6a4f"/>
+            <path d="M200 76 Q160 140 200 205 M200 76 Q240 140 200 205 M200 76 V205" stroke="#52b788" stroke-width="4" fill="none"/>
+            <g fill="#fff8e7">
+                <circle cx="170" cy="110" r="2.5"/><circle cx="230" cy="110" r="2.5"/>
+                <circle cx="155" cy="145" r="2.5"/><circle cx="245" cy="145" r="2.5"/>
+                <circle cx="175" cy="175" r="2.5"/><circle cx="225" cy="175" r="2.5"/>
+                <circle cx="200" cy="130" r="2.5"/><circle cx="200" cy="165" r="2.5"/>
+            </g>
+            <circle cx="200" cy="78" r="13" fill="#ff7b9c"/>
+            <circle cx="200" cy="78" r="5" fill="#ffb703"/>
+        </svg>
+        <div class="plant-info">
+            <h4>Kaktus Bulat Mini</h4>
+            <p>Harga: Rp15.000</p>
+            <p>Cocok untuk meja belajar, tahan banting, jarang disiram.</p>
+        </div>
+    </div>
+
+    <div class="plant-card">
+        <svg viewBox="0 0 400 300" style="display:block;width:100%" role="img" aria-label="Ilustrasi sukulen Echeveria">
+            <rect width="400" height="300" fill="#ffd6e0"/>
+            <path d="M145 220 H255 L245 282 H155 Z" fill="#c8553d"/>
+            <rect x="135" y="203" width="130" height="22" rx="6" fill="#e07a5f"/>
+            <g transform="translate(200 160)" stroke="#52b788" stroke-width="2">
+                <g fill="#95d5b2">
+                    <ellipse cx="0" cy="-42" rx="24" ry="48"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(45)"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(90)"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(135)"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(180)"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(225)"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(270)"/>
+                    <ellipse cx="0" cy="-42" rx="24" ry="48" transform="rotate(315)"/>
+                </g>
+                <g fill="#74c69d">
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(22)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(67)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(112)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(157)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(202)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(247)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(292)"/>
+                    <ellipse cx="0" cy="-28" rx="17" ry="34" transform="rotate(337)"/>
+                </g>
+                <circle r="14" fill="#d8f3dc"/>
+            </g>
+        </svg>
+        <div class="plant-info">
+            <h4>Sukulen Echeveria</h4>
+            <p>Harga: Rp25.000</p>
+            <p>Bentuknya seperti bunga mawar, paling sering dipajang di kafe.</p>
+        </div>
+    </div>
+</aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Kaktus Corner. Dibuat untuk Tugas Pemrograman Web 🌵</p>
+    </footer>
+
+    <!-- Deteksi iframe: kalau halaman ini dibuka di dalam index, header/nav/footer disembunyikan -->
+    <script>
+        if (window.self !== window.top) {
+            document.body.classList.add("di-iframe");
+        }
+    </script>
+
+</body>
+</html>
